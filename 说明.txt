@@ -1,0 +1,17 @@
+目标：
+（1）读取目录，知道每一篇文章的标题，起始页，结束页
+（2）读取每一篇文章的每一个文字段落
+（3）读取每一篇文章的每一个图片
+（4）使用谷歌翻译翻成中文
+（5）使用gpt把图片和文字段落对应上
+
+gist里是目标（1）和部分的目标（3）；目标（2）基本完成；本周计划全搞定，下周我就用阿里云把一本书的架构和文字的输入端做出来，便于未来批量生成架构；音频和图片等到再下一周
+
+效果拔群哦，有可能是因为这个pdf文档比较规整。好消息是project gutenberg的书目来源也相当规整：https://www.gutenberg.org/cache/epub/73624/pg73624-images.html
+
+你有时间可以了解一下：
+（1）安装：https://pymupdf.readthedocs.io/en/latest/installation.html
+（2）基础和教程：
+https://pymupdf.readthedocs.io/en/latest/the-basics.html
+https://pymupdf.readthedocs.io/en/latest/tutorial.html
+（3）试运行gist里的code，第76行被注释掉的，可以保存图片

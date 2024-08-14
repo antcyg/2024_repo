@@ -15,3 +15,6 @@ gist里是目标（1）和部分的目标（3）；目标（2）基本完成；�
 https://pymupdf.readthedocs.io/en/latest/the-basics.html
 https://pymupdf.readthedocs.io/en/latest/tutorial.html
 （3）试运行gist里的code，第76行被注释掉的，可以保存图片
+
+https://050644zf.github.io/ArknightsStoryTextReader/index2.html#/zh_CN/menu
+https://akgcc.github.io/cc/story.html#side&act31side&0

@@ -1,0 +1,59 @@
+利率曲线可以是 每个点买三次降一格 比如0.5
+
+
+总是起步差不多10块，基础通关200%，优秀通关300%
+
+然后每到100，缩一位
+
+单位会膨胀，从K 千，到十千TK，百千HK，百万M，TM，HM，千万B，TB，HB
+
+感觉长期任务意义不大，可以是每完成一个小任务，积累一点XP；这样只有小任务
+
+kk 主要是确保 开局总是困难的，不然钱多到溢出，没有破局的爽感
+
+有的 供需关系
+
+需求提高，供给不变，价格上升，收益减少
+
+七个方向 每个五个等级
+
+Level 1 Effects:
+1. Data: Foresee next card rank.
+2. Infra: Income +1 at maturity.
+3. Industry: Energy bonds get Floating Interest (Coin flip: +1 income/month).
+4. Macro: If Crisis Year: Start Cash +1.
+5. Tax: "Leverage Loan": +3 Cash now, Repay 5 in 3 months (6 turns).
+6. Investor: Free Mandate Reroll (1/year).
+7. Social: Immune to 1st Insolvency per year.
+
+Data 方向，预知信息
+
+A. Data (Foresight)
+Theme: See further, plan better, manipulate draws.
+* Lv1 : Start of half year, foresee next draw’s rank
+* Lv2: Start of half year, Foresee next card
+* Lv3: Start of half year, foresee whether a bond will default, before buying it
+* Lv4: Start of quarter
+* Lv5: 
+
+基础设施（比如内部定价系统，下单优化，回测）：提高基础数值
+
+行业分析：提高一个具体花色
+
+C. Industry
+Theme: Sector-specific upside with volatility.
+* Lv1: Energy bonds floating interest (coin flip +1/month)
+* Lv2: Consumer bonds never default on first roll
+* Lv3: Tech bond’s HY becomes convertible bond
+* Lv4: Once per year, choose a suit that increases/decreases probability
+* Lv5: If holding ≥3 bonds of same suit, all gain +1 income at maturity
+
+D. 宏观：提高在boss关 或者说 灾年的表现，或者减少损失
+
+E. 会计和税：可以借钱，避免自己破产
+
+F. 投资人：提高任务收益，或者可以重掷任务
+
+G. 社会关系/人脉：暴雷方向强化
+
+做小demo时候可以只支持第一层解锁..

@@ -1,0 +1,2044 @@
+{
+  "font_size": 0.4,
+  "font_color": "#FFFFFF",
+  "background_alpha": 0.5,
+  "background_color": "#9C27B0",
+  "Stroke": "none",
+  "type": "AIsubtitle",
+  "lang": "zh",
+  "version": "v1.7.0.4",
+  "body": [
+    {
+      "from": 1.54,
+      "to": 2.96,
+      "sid": 1,
+      "location": 2,
+      "content": "创作拆解不易",
+      "music": 0.0
+    },
+    {
+      "from": 2.96,
+      "to": 4.18,
+      "sid": 2,
+      "location": 2,
+      "content": "还请大家点赞",
+      "music": 0.0
+    },
+    {
+      "from": 4.18,
+      "to": 5.91,
+      "sid": 3,
+      "location": 2,
+      "content": "投币收藏一键三连",
+      "music": 0.0
+    },
+    {
+      "from": 5.91,
+      "to": 7.19,
+      "sid": 4,
+      "location": 2,
+      "content": "今天我们来聊一聊",
+      "music": 0.0
+    },
+    {
+      "from": 7.19,
+      "to": 9.55,
+      "sid": 5,
+      "location": 2,
+      "content": "CPU是如何利用页表项",
+      "music": 0.0
+    },
+    {
+      "from": 9.55,
+      "to": 12.16,
+      "sid": 6,
+      "location": 2,
+      "content": "把虚拟地址转换为物理地址的",
+      "music": 0.0
+    },
+    {
+      "from": 12.16,
+      "to": 15.4,
+      "sid": 7,
+      "location": 2,
+      "content": "以及当这个所需的页面不在内存当中的时候",
+      "music": 0.0
+    },
+    {
+      "from": 15.4,
+      "to": 16.4,
+      "sid": 8,
+      "location": 2,
+      "content": "会发生什么事情",
+      "music": 0.0
+    },
+    {
+      "from": 16.4,
+      "to": 16.78,
+      "sid": 9,
+      "location": 2,
+      "content": "好的",
+      "music": 0.0
+    },
+    {
+      "from": 16.78,
+      "to": 19.8,
+      "sid": 10,
+      "location": 2,
+      "content": "这其实是操作系统里非常关键的一个机制",
+      "music": 0.0
+    },
+    {
+      "from": 19.8,
+      "to": 20.939,
+      "sid": 11,
+      "location": 2,
+      "content": "那我们就开始吧",
+      "music": 0.0
+    },
+    {
+      "from": 20.939,
+      "to": 23.519,
+      "sid": 12,
+      "location": 2,
+      "content": "首先我们要聊的主题是页表项",
+      "music": 0.0
+    },
+    {
+      "from": 23.519,
+      "to": 24.939,
+      "sid": 13,
+      "location": 2,
+      "content": "它到底是个什么东西",
+      "music": 0.0
+    },
+    {
+      "from": 24.939,
+      "to": 28.539,
+      "sid": 14,
+      "location": 2,
+      "content": "以及它在虚拟地址到物理地址的转换过程当中",
+      "music": 0.0
+    },
+    {
+      "from": 28.539,
+      "to": 30.08,
+      "sid": 15,
+      "location": 2,
+      "content": "扮演了一个什么样的角色",
+      "music": 0.0
+    },
+    {
+      "from": 30.08,
+      "to": 30.98,
+      "sid": 16,
+      "location": 2,
+      "content": "其实页表项",
+      "music": 0.0
+    },
+    {
+      "from": 34.0,
+      "to": 35.14,
+      "sid": 17,
+      "location": 2,
+      "content": "核心数据结构",
+      "music": 0.0
+    },
+    {
+      "from": 35.14,
+      "to": 37.37,
+      "sid": 18,
+      "location": 2,
+      "content": "然后它是存储在页表里面的",
+      "music": 0.0
+    },
+    {
+      "from": 37.37,
+      "to": 40.83,
+      "sid": 19,
+      "location": 2,
+      "content": "每一个页表项呢都负责把一个虚拟页号",
+      "music": 0.0
+    },
+    {
+      "from": 40.83,
+      "to": 42.87,
+      "sid": 20,
+      "location": 2,
+      "content": "映射到一个物理页号",
+      "music": 0.0
+    },
+    {
+      "from": 42.87,
+      "to": 45.79,
+      "sid": 21,
+      "location": 2,
+      "content": "所以说它是虚拟地址和物理地址之",
+      "music": 0.0
+    },
+    {
+      "from": 45.79,
+      "to": 47.32,
+      "sid": 22,
+      "location": 2,
+      "content": "间的一个桥梁嗯",
+      "music": 0.0
+    },
+    {
+      "from": 47.32,
+      "to": 50.02,
+      "sid": 23,
+      "location": 2,
+      "content": "那页表项在不同的架构下面",
+      "music": 0.0
+    },
+    {
+      "from": 50.02,
+      "to": 52.32,
+      "sid": 24,
+      "location": 2,
+      "content": "它的结构和大小会有一些不一样吗",
+      "music": 0.0
+    },
+    {
+      "from": 52.32,
+      "to": 56.23,
+      "sid": 25,
+      "location": 2,
+      "content": "对的比如说在X86614位的架构下面",
+      "music": 0.0
+    },
+    {
+      "from": 56.23,
+      "to": 58.23,
+      "sid": 26,
+      "location": 2,
+      "content": "它的页表项是64位",
+      "music": 0.0
+    },
+    {
+      "from": 58.23,
+      "to": 59.59,
+      "sid": 27,
+      "location": 2,
+      "content": "也就是八个字节",
+      "music": 0.0
+    },
+    {
+      "from": 59.59,
+      "to": 63.97,
+      "sid": 28,
+      "location": 2,
+      "content": "然后其中呢第52位是用来存物理页框号",
+      "music": 0.0
+    },
+    {
+      "from": 63.97,
+      "to": 66.25,
+      "sid": 29,
+      "location": 2,
+      "content": "高12位是一些标志位",
+      "music": 0.0
+    },
+    {
+      "from": 66.25,
+      "to": 69.32,
+      "sid": 30,
+      "location": 2,
+      "content": "但是在32位的PAE模式下面",
+      "music": 0.0
+    },
+    {
+      "from": 69.32,
+      "to": 71.4,
+      "sid": 31,
+      "location": 2,
+      "content": "它的页表项是32位",
+      "music": 0.0
+    },
+    {
+      "from": 71.4,
+      "to": 73.78,
+      "sid": 32,
+      "location": 2,
+      "content": "然后物理页框号占24位",
+      "music": 0.0
+    },
+    {
+      "from": 73.78,
+      "to": 74.59,
+      "sid": 33,
+      "location": 2,
+      "content": "懂了懂了",
+      "music": 0.0
+    },
+    {
+      "from": 74.59,
+      "to": 77.12,
+      "sid": 34,
+      "location": 2,
+      "content": "那页表项里面的这些标志位",
+      "music": 0.0
+    },
+    {
+      "from": 77.12,
+      "to": 80.78,
+      "sid": 35,
+      "location": 2,
+      "content": "他们到底是怎么来影响内存访问和内存管理的",
+      "music": 0.0
+    },
+    {
+      "from": 80.78,
+      "to": 81.86,
+      "sid": 36,
+      "location": 2,
+      "content": "这些标志位",
+      "music": 0.0
+    },
+    {
+      "from": 81.86,
+      "to": 85.06,
+      "sid": 37,
+      "location": 2,
+      "content": "其实就是页表项里面的一些二进制的位",
+      "music": 0.0
+    },
+    {
+      "from": 85.06,
+      "to": 87.74,
+      "sid": 38,
+      "location": 2,
+      "content": "然后每一位都控制着某一种属性",
+      "music": 0.0
+    },
+    {
+      "from": 87.74,
+      "to": 89.25,
+      "sid": 39,
+      "location": 2,
+      "content": "比如说P位",
+      "music": 0.0
+    },
+    {
+      "from": 89.25,
+      "to": 90.39,
+      "sid": 40,
+      "location": 2,
+      "content": "它是存在位",
+      "music": 0.0
+    },
+    {
+      "from": 90.39,
+      "to": 92.17,
+      "sid": 41,
+      "location": 2,
+      "content": "如果这一位是一的话",
+      "music": 0.0
+    },
+    {
+      "from": 92.17,
+      "to": 95.01,
+      "sid": 42,
+      "location": 2,
+      "content": "就说明这个液是在物理内存里面的",
+      "music": 0.0
+    },
+    {
+      "from": 95.01,
+      "to": 96.36,
+      "sid": 43,
+      "location": 2,
+      "content": "如果是零的话",
+      "music": 0.0
+    },
+    {
+      "from": 96.36,
+      "to": 99.77,
+      "sid": 44,
+      "location": 2,
+      "content": "访问这个页就会导致缺页异常哦",
+      "music": 0.0
+    },
+    {
+      "from": 99.77,
+      "to": 101.47,
+      "sid": 45,
+      "location": 2,
+      "content": "那除了存在位之外",
+      "music": 0.0
+    },
+    {
+      "from": 101.47,
+      "to": 103.17,
+      "sid": 46,
+      "location": 2,
+      "content": "还有哪些比较重要的标志位呢",
+      "music": 0.0
+    },
+    {
+      "from": 103.17,
+      "to": 105.24,
+      "sid": 47,
+      "location": 2,
+      "content": "还有就是R2斜杠W位",
+      "music": 0.0
+    },
+    {
+      "from": 105.24,
+      "to": 109.13,
+      "sid": 48,
+      "location": 2,
+      "content": "它是控制这个页是可读可写的还是只读的",
+      "music": 0.0
+    },
+    {
+      "from": 109.13,
+      "to": 113.23,
+      "sid": 49,
+      "location": 2,
+      "content": "然后U斜杠S位是控制用户态的程序",
+      "music": 0.0
+    },
+    {
+      "from": 113.23,
+      "to": 114.85,
+      "sid": 50,
+      "location": 2,
+      "content": "是否可以访问这个页",
+      "music": 0.0
+    },
+    {
+      "from": 114.85,
+      "to": 116.91,
+      "sid": 51,
+      "location": 2,
+      "content": "还有A位是访问位",
+      "music": 0.0
+    },
+    {
+      "from": 116.91,
+      "to": 118.87,
+      "sid": 52,
+      "location": 2,
+      "content": "当这个页被访问的时候",
+      "music": 0.0
+    },
+    {
+      "from": 118.87,
+      "to": 121.07,
+      "sid": 53,
+      "location": 2,
+      "content": "硬件会自动把它设置为一",
+      "music": 0.0
+    },
+    {
+      "from": 121.07,
+      "to": 123.09,
+      "sid": 54,
+      "location": 2,
+      "content": "然后地位是脏位",
+      "music": 0.0
+    },
+    {
+      "from": 123.09,
+      "to": 125.21,
+      "sid": 55,
+      "location": 2,
+      "content": "当这个页被写入的时候",
+      "music": 0.0
+    },
+    {
+      "from": 125.21,
+      "to": 127.06,
+      "sid": 56,
+      "location": 2,
+      "content": "硬件会把它设置为一",
+      "music": 0.0
+    },
+    {
+      "from": 127.06,
+      "to": 129.22,
+      "sid": 57,
+      "location": 2,
+      "content": "那这两位呢经常被页面置换",
+      "music": 0.0
+    },
+    {
+      "from": 129.22,
+      "to": 131.58,
+      "sid": 58,
+      "location": 2,
+      "content": "算法和页回血机制来使用",
+      "music": 0.0
+    },
+    {
+      "from": 131.58,
+      "to": 132.36,
+      "sid": 59,
+      "location": 2,
+      "content": "我明白了",
+      "music": 0.0
+    },
+    {
+      "from": 132.36,
+      "to": 135.29,
+      "sid": 60,
+      "location": 2,
+      "content": "然后我们来说一下地址转换的完整流程",
+      "music": 0.0
+    },
+    {
+      "from": 135.29,
+      "to": 139.42,
+      "sid": 61,
+      "location": 2,
+      "content": "那LINUX为什么要用多级页表结构来做地址转换",
+      "music": 0.0
+    },
+    {
+      "from": 139.42,
+      "to": 140.82,
+      "sid": 62,
+      "location": 2,
+      "content": "它到底是怎么分层的",
+      "music": 0.0
+    },
+    {
+      "from": 140.82,
+      "to": 143.94,
+      "sid": 63,
+      "location": 2,
+      "content": "LINUX用多级页表其实就是为了节省内存",
+      "music": 0.0
+    },
+    {
+      "from": 143.94,
+      "to": 145.93,
+      "sid": 64,
+      "location": 2,
+      "content": "因为如果是一级页表的话",
+      "music": 0.0
+    },
+    {
+      "from": 145.93,
+      "to": 148.87,
+      "sid": 65,
+      "location": 2,
+      "content": "它会把整个虚拟地址空间都映射出来",
+      "music": 0.0
+    },
+    {
+      "from": 148.87,
+      "to": 150.42,
+      "sid": 66,
+      "location": 2,
+      "content": "那会非常占用内存",
+      "music": 0.0
+    },
+    {
+      "from": 150.42,
+      "to": 152.54,
+      "sid": 67,
+      "location": 2,
+      "content": "而多级列表只有在需要的时候",
+      "music": 0.0
+    },
+    {
+      "from": 152.54,
+      "to": 154.06,
+      "sid": 68,
+      "location": 2,
+      "content": "才会分配下级页表",
+      "music": 0.0
+    },
+    {
+      "from": 156.5,
+      "to": 158.74,
+      "sid": 69,
+      "location": 2,
+      "content": "LINUX是怎么来划分这些级别的",
+      "music": 0.0
+    },
+    {
+      "from": 158.74,
+      "to": 161.1,
+      "sid": 70,
+      "location": 2,
+      "content": "在X86614位的架构下面呢",
+      "music": 0.0
+    },
+    {
+      "from": 161.1,
+      "to": 164.25,
+      "sid": 71,
+      "location": 2,
+      "content": "LINUX理论上是支持五级页表的",
+      "music": 0.0
+    },
+    {
+      "from": 164.25,
+      "to": 169.109,
+      "sid": 72,
+      "location": 2,
+      "content": "它分别是p m l four p four DP m DP t e",
+      "music": 0.0
+    },
+    {
+      "from": 169.109,
+      "to": 172.089,
+      "sid": 73,
+      "location": 2,
+      "content": "然后每一级页表呢都会把虚拟地址的一部分",
+      "music": 0.0
+    },
+    {
+      "from": 172.089,
+      "to": 175.66,
+      "sid": 74,
+      "location": 2,
+      "content": "拿出来作为索引去找到下一级页表的位置",
+      "music": 0.0
+    },
+    {
+      "from": 175.66,
+      "to": 178.51,
+      "sid": 75,
+      "location": 2,
+      "content": "那最后PTE会指向一个物理页框",
+      "music": 0.0
+    },
+    {
+      "from": 178.51,
+      "to": 179.79,
+      "sid": 76,
+      "location": 2,
+      "content": "所以说虚拟地址",
+      "music": 0.0
+    },
+    {
+      "from": 179.79,
+      "to": 182.79,
+      "sid": 77,
+      "location": 2,
+      "content": "它在这个多级页表里面是怎么被逐步解析的",
+      "music": 0.0
+    },
+    {
+      "from": 182.79,
+      "to": 186.529,
+      "sid": 78,
+      "location": 2,
+      "content": "以常见的48位虚拟地址和4KB页面为例",
+      "music": 0.0
+    },
+    {
+      "from": 186.529,
+      "to": 188.769,
+      "sid": 79,
+      "location": 2,
+      "content": "虚拟地址会被分成五段",
+      "music": 0.0
+    },
+    {
+      "from": 188.769,
+      "to": 191.21,
+      "sid": 80,
+      "location": 2,
+      "content": "前面四段每段都是九位",
+      "music": 0.0
+    },
+    {
+      "from": 191.21,
+      "to": 193.63,
+      "sid": 81,
+      "location": 2,
+      "content": "分别对应四级页表的索引",
+      "music": 0.0
+    },
+    {
+      "from": 193.63,
+      "to": 196.38,
+      "sid": 82,
+      "location": 2,
+      "content": "然后最后12位是业内的偏移",
+      "music": 0.0
+    },
+    {
+      "from": 196.38,
+      "to": 198.06,
+      "sid": 83,
+      "location": 2,
+      "content": "那在这个转换的过程当中",
+      "music": 0.0
+    },
+    {
+      "from": 198.06,
+      "to": 201.47,
+      "sid": 84,
+      "location": 2,
+      "content": "每一级页表是怎么找到下一级页表的位置的呢",
+      "music": 0.0
+    },
+    {
+      "from": 201.47,
+      "to": 203.89,
+      "sid": 85,
+      "location": 2,
+      "content": "其实每一级页表的起始地址",
+      "music": 0.0
+    },
+    {
+      "from": 203.89,
+      "to": 206.52,
+      "sid": 86,
+      "location": 2,
+      "content": "都是放在一个特定的寄存器里面的",
+      "music": 0.0
+    },
+    {
+      "from": 206.52,
+      "to": 208.48,
+      "sid": 87,
+      "location": 2,
+      "content": "比如说CR3寄存器里面",
+      "music": 0.0
+    },
+    {
+      "from": 208.48,
+      "to": 211.16,
+      "sid": 88,
+      "location": 2,
+      "content": "存的是PML4的基地址",
+      "music": 0.0
+    },
+    {
+      "from": 211.16,
+      "to": 214.84,
+      "sid": 89,
+      "location": 2,
+      "content": "然后根据虚拟地址的前九位作为索引",
+      "music": 0.0
+    },
+    {
+      "from": 214.84,
+      "to": 216.72,
+      "sid": 90,
+      "location": 2,
+      "content": "去找到PDPT的地址",
+      "music": 0.0
+    },
+    {
+      "from": 216.72,
+      "to": 219.54,
+      "sid": 91,
+      "location": 2,
+      "content": "再用接下来的九位去找到PD的地址",
+      "music": 0.0
+    },
+    {
+      "from": 219.54,
+      "to": 220.5,
+      "sid": 92,
+      "location": 2,
+      "content": "以此类推",
+      "music": 0.0
+    },
+    {
+      "from": 220.5,
+      "to": 222.18,
+      "sid": 93,
+      "location": 2,
+      "content": "直到找到PTE",
+      "music": 0.0
+    },
+    {
+      "from": 222.18,
+      "to": 225.12,
+      "sid": 94,
+      "location": 2,
+      "content": "然后把PTE里面的物理页框号取出来",
+      "music": 0.0
+    },
+    {
+      "from": 225.12,
+      "to": 227.58,
+      "sid": 95,
+      "location": 2,
+      "content": "再跟业内偏移拼接起来",
+      "music": 0.0
+    },
+    {
+      "from": 227.58,
+      "to": 229.52,
+      "sid": 96,
+      "location": 2,
+      "content": "就得到了最终的物理地址",
+      "music": 0.0
+    },
+    {
+      "from": 229.52,
+      "to": 230.6,
+      "sid": 97,
+      "location": 2,
+      "content": "我有一个疑问啊",
+      "music": 0.0
+    },
+    {
+      "from": 230.6,
+      "to": 232.78,
+      "sid": 98,
+      "location": 2,
+      "content": "如果说遇到了这种巨型页",
+      "music": 0.0
+    },
+    {
+      "from": 232.78,
+      "to": 235.46,
+      "sid": 99,
+      "location": 2,
+      "content": "那地址转换的流程会有什么不一样吗",
+      "music": 0.0
+    },
+    {
+      "from": 235.46,
+      "to": 237.64,
+      "sid": 100,
+      "location": 2,
+      "content": "如果在pod或者PMD里面",
+      "music": 0.0
+    },
+    {
+      "from": 237.64,
+      "to": 239.74,
+      "sid": 101,
+      "location": 2,
+      "content": "发现设置了大叶标志",
+      "music": 0.0
+    },
+    {
+      "from": 239.74,
+      "to": 241.84,
+      "sid": 102,
+      "location": 2,
+      "content": "那么就不需要再往下查页表了",
+      "music": 0.0
+    },
+    {
+      "from": 241.84,
+      "to": 244.79,
+      "sid": 103,
+      "location": 2,
+      "content": "直接把那部分虚拟地址当做业内偏移",
+      "music": 0.0
+    },
+    {
+      "from": 244.79,
+      "to": 247.75,
+      "sid": 104,
+      "location": 2,
+      "content": "然后跟POD或者PMD里面的地址拼起来",
+      "music": 0.0
+    },
+    {
+      "from": 247.75,
+      "to": 249.45,
+      "sid": 105,
+      "location": 2,
+      "content": "就可以得到物理地址了",
+      "music": 0.0
+    },
+    {
+      "from": 249.45,
+      "to": 251.79,
+      "sid": 106,
+      "location": 2,
+      "content": "这样的话就跳过了后面几级页表",
+      "music": 0.0
+    },
+    {
+      "from": 251.79,
+      "to": 253.45,
+      "sid": 107,
+      "location": 2,
+      "content": "所以地址转换会更快",
+      "music": 0.0
+    },
+    {
+      "from": 253.45,
+      "to": 255.8,
+      "sid": 108,
+      "location": 2,
+      "content": "对TLB的使用也更高效",
+      "music": 0.0
+    },
+    {
+      "from": 255.8,
+      "to": 257.06,
+      "sid": 109,
+      "location": 2,
+      "content": "听起来很不错啊",
+      "music": 0.0
+    },
+    {
+      "from": 257.06,
+      "to": 259.64,
+      "sid": 110,
+      "location": 2,
+      "content": "那如果说在这个地址转换的过程当中",
+      "music": 0.0
+    },
+    {
+      "from": 259.64,
+      "to": 261.52,
+      "sid": 111,
+      "location": 2,
+      "content": "遇到了页表项无效",
+      "music": 0.0
+    },
+    {
+      "from": 261.52,
+      "to": 262.42,
+      "sid": 112,
+      "location": 2,
+      "content": "会怎么处理呢",
+      "music": 0.0
+    },
+    {
+      "from": 262.42,
+      "to": 264.4,
+      "sid": 113,
+      "location": 2,
+      "content": "只要在任何一级页表里面",
+      "music": 0.0
+    },
+    {
+      "from": 264.4,
+      "to": 266.84,
+      "sid": 114,
+      "location": 2,
+      "content": "发现对应的页表项是无效的",
+      "music": 0.0
+    },
+    {
+      "from": 266.84,
+      "to": 269.06,
+      "sid": 115,
+      "location": 2,
+      "content": "比如说它的存在位是零",
+      "music": 0.0
+    },
+    {
+      "from": 269.06,
+      "to": 272.36,
+      "sid": 116,
+      "location": 2,
+      "content": "那么CPU就会立刻触发一个缺页异常",
+      "music": 0.0
+    },
+    {
+      "from": 272.36,
+      "to": 275.64,
+      "sid": 117,
+      "location": 2,
+      "content": "然后控制权就会交给操作系统的异常处理程序",
+      "music": 0.0
+    },
+    {
+      "from": 275.64,
+      "to": 278.48,
+      "sid": 118,
+      "location": 2,
+      "content": "一般来说就是去分配一个新的物理页",
+      "music": 0.0
+    },
+    {
+      "from": 278.48,
+      "to": 280.62,
+      "sid": 119,
+      "location": 2,
+      "content": "或者从磁盘把数据读进来",
+      "music": 0.0
+    },
+    {
+      "from": 280.62,
+      "to": 282.82,
+      "sid": 120,
+      "location": 2,
+      "content": "再重新执行刚才那一条指令",
+      "music": 0.0
+    },
+    {
+      "from": 282.82,
+      "to": 283.52,
+      "sid": 121,
+      "location": 2,
+      "content": "好的",
+      "music": 0.0
+    },
+    {
+      "from": 283.52,
+      "to": 286.06,
+      "sid": 122,
+      "location": 2,
+      "content": "下面我们来聊聊缺页异常",
+      "music": 0.0
+    },
+    {
+      "from": 286.06,
+      "to": 288.46,
+      "sid": 123,
+      "location": 2,
+      "content": "它到底是在什么情况下会被触发",
+      "music": 0.0
+    },
+    {
+      "from": 288.46,
+      "to": 291.08,
+      "sid": 124,
+      "location": 2,
+      "content": "然后LINUX内核是怎么来判断",
+      "music": 0.0
+    },
+    {
+      "from": 291.08,
+      "to": 292.96,
+      "sid": 125,
+      "location": 2,
+      "content": "这个缺页异常的类型呢",
+      "music": 0.0
+    },
+    {
+      "from": 292.96,
+      "to": 295.56,
+      "sid": 126,
+      "location": 2,
+      "content": "当CPU去访问一个虚拟地址",
+      "music": 0.0
+    },
+    {
+      "from": 295.56,
+      "to": 299.52,
+      "sid": 127,
+      "location": 2,
+      "content": "然后发现它对应的页表项的P位是零的时候",
+      "music": 0.0
+    },
+    {
+      "from": 299.52,
+      "to": 302.22,
+      "sid": 128,
+      "location": 2,
+      "content": "就会自动触发一个缺页异常",
+      "music": 0.0
+    },
+    {
+      "from": 302.22,
+      "to": 305.54,
+      "sid": 129,
+      "location": 2,
+      "content": "接着就会跳转到内核里面的do page fault",
+      "music": 0.0
+    },
+    {
+      "from": 305.54,
+      "to": 308.36,
+      "sid": 130,
+      "location": 2,
+      "content": "这个函数去处理这个读page fault",
+      "music": 0.0
+    },
+    {
+      "from": 308.36,
+      "to": 311.08,
+      "sid": 131,
+      "location": 2,
+      "content": "怎么去分辨缺页的具体原因呢",
+      "music": 0.0
+    },
+    {
+      "from": 311.08,
+      "to": 313.08,
+      "sid": 132,
+      "location": 2,
+      "content": "他会去读CR2寄存器",
+      "music": 0.0
+    },
+    {
+      "from": 313.08,
+      "to": 315.789,
+      "sid": 133,
+      "location": 2,
+      "content": "拿到触发异常的那个虚拟地址",
+      "music": 0.0
+    },
+    {
+      "from": 315.789,
+      "to": 320.22,
+      "sid": 134,
+      "location": 2,
+      "content": "然后还会去分析CPU压到站里面的error code",
+      "music": 0.0
+    },
+    {
+      "from": 320.22,
+      "to": 323.8,
+      "sid": 135,
+      "location": 2,
+      "content": "那这个error code里面的每一个bit it都有特殊的含义",
+      "music": 0.0
+    },
+    {
+      "from": 323.8,
+      "to": 327.69,
+      "sid": 136,
+      "location": 2,
+      "content": "比如说最低位表示是不存在还是权限错误",
+      "music": 0.0
+    },
+    {
+      "from": 327.69,
+      "to": 330.75,
+      "sid": 137,
+      "location": 2,
+      "content": "然后倒数第二位表示是读还是写",
+      "music": 0.0
+    },
+    {
+      "from": 330.75,
+      "to": 333.85,
+      "sid": 138,
+      "location": 2,
+      "content": "倒数第三位表示是在用户态还是内核态",
+      "music": 0.0
+    },
+    {
+      "from": 333.85,
+      "to": 334.9,
+      "sid": 139,
+      "location": 2,
+      "content": "原来是这样啊",
+      "music": 0.0
+    },
+    {
+      "from": 334.9,
+      "to": 337.54,
+      "sid": 140,
+      "location": 2,
+      "content": "那LINUX在收到缺页异常之后",
+      "music": 0.0
+    },
+    {
+      "from": 337.54,
+      "to": 339.12,
+      "sid": 141,
+      "location": 2,
+      "content": "具体的处理步骤是什么",
+      "music": 0.0
+    },
+    {
+      "from": 339.12,
+      "to": 341.6,
+      "sid": 142,
+      "location": 2,
+      "content": "首先会根据CR2寄存器",
+      "music": 0.0
+    },
+    {
+      "from": 341.6,
+      "to": 344.23,
+      "sid": 143,
+      "location": 2,
+      "content": "拿到触发异常的虚拟地址",
+      "music": 0.0
+    },
+    {
+      "from": 344.23,
+      "to": 348.31,
+      "sid": 144,
+      "location": 2,
+      "content": "然后根据error code来分析这个异常的类型",
+      "music": 0.0
+    },
+    {
+      "from": 348.31,
+      "to": 350.35,
+      "sid": 145,
+      "location": 2,
+      "content": "是读异常还是写异常",
+      "music": 0.0
+    },
+    {
+      "from": 350.35,
+      "to": 353.22,
+      "sid": 146,
+      "location": 2,
+      "content": "是用户态还是内核态之后呢",
+      "music": 0.0
+    },
+    {
+      "from": 353.22,
+      "to": 356.58,
+      "sid": 147,
+      "location": 2,
+      "content": "内核怎么去确定这个虚拟地址是不是合法的",
+      "music": 0.0
+    },
+    {
+      "from": 356.58,
+      "to": 359.95,
+      "sid": 148,
+      "location": 2,
+      "content": "内核会去查找当前进程的虚拟内存区域",
+      "music": 0.0
+    },
+    {
+      "from": 359.95,
+      "to": 363.29,
+      "sid": 149,
+      "location": 2,
+      "content": "看看这个地址是不是落在某一个v ma里面",
+      "music": 0.0
+    },
+    {
+      "from": 363.29,
+      "to": 367.07,
+      "sid": 150,
+      "location": 2,
+      "content": "然后再检查有没有对应的访问权限",
+      "music": 0.0
+    },
+    {
+      "from": 367.07,
+      "to": 368.73,
+      "sid": 151,
+      "location": 2,
+      "content": "如果是不合法的地址",
+      "music": 0.0
+    },
+    {
+      "from": 368.73,
+      "to": 370.33,
+      "sid": 152,
+      "location": 2,
+      "content": "或者说没有权限的话",
+      "music": 0.0
+    },
+    {
+      "from": 370.33,
+      "to": 373.419,
+      "sid": 153,
+      "location": 2,
+      "content": "就会直接走bad area这个函数去处理",
+      "music": 0.0
+    },
+    {
+      "from": 373.419,
+      "to": 375.079,
+      "sid": 154,
+      "location": 2,
+      "content": "如果说一切都合法",
+      "music": 0.0
+    },
+    {
+      "from": 375.079,
+      "to": 378.219,
+      "sid": 155,
+      "location": 2,
+      "content": "那就会调用handle mum fault来真正的处理",
+      "music": 0.0
+    },
+    {
+      "from": 378.219,
+      "to": 378.98,
+      "sid": 156,
+      "location": 2,
+      "content": "这个缺页",
+      "music": 0.0
+    },
+    {
+      "from": 378.98,
+      "to": 380.9,
+      "sid": 157,
+      "location": 2,
+      "content": "可能是分配一个新的物理页",
+      "music": 0.0
+    },
+    {
+      "from": 380.9,
+      "to": 383.56,
+      "sid": 158,
+      "location": 2,
+      "content": "也可能是把磁盘上的内容读进来",
+      "music": 0.0
+    },
+    {
+      "from": 383.56,
+      "to": 387.24,
+      "sid": 159,
+      "location": 2,
+      "content": "OK我们继续来看一下怎么去观察页表项",
+      "music": 0.0
+    },
+    {
+      "from": 387.24,
+      "to": 389.4,
+      "sid": 160,
+      "location": 2,
+      "content": "就是说我们在LINUX系统里面",
+      "music": 0.0
+    },
+    {
+      "from": 389.4,
+      "to": 393.2,
+      "sid": 161,
+      "location": 2,
+      "content": "有哪些命令可以帮我们去查看进程的页表信息",
+      "music": 0.0
+    },
+    {
+      "from": 393.2,
+      "to": 394.28,
+      "sid": 162,
+      "location": 2,
+      "content": "和TOB的信息",
+      "music": 0.0
+    },
+    {
+      "from": 394.28,
+      "to": 397.52,
+      "sid": 163,
+      "location": 2,
+      "content": "可以通过斜杠broke这个虚拟文件系统",
+      "music": 0.0
+    },
+    {
+      "from": 397.52,
+      "to": 399.72,
+      "sid": 164,
+      "location": 2,
+      "content": "比如说cat broke self maps",
+      "music": 0.0
+    },
+    {
+      "from": 399.72,
+      "to": 403.07,
+      "sid": 165,
+      "location": 2,
+      "content": "可以看到当前进程的页表的一个统计",
+      "music": 0.0
+    },
+    {
+      "from": 403.07,
+      "to": 405.15,
+      "sid": 166,
+      "location": 2,
+      "content": "然后cut pro self q info",
+      "music": 0.0
+    },
+    {
+      "from": 405.15,
+      "to": 408.17,
+      "sid": 167,
+      "location": 2,
+      "content": "可以找到TLB和catch的一些详细的参数",
+      "music": 0.0
+    },
+    {
+      "from": 408.17,
+      "to": 412.039,
+      "sid": 168,
+      "location": 2,
+      "content": "有没有什么命令可以更直观的去看进程的内存",
+      "music": 0.0
+    },
+    {
+      "from": 412.039,
+      "to": 412.779,
+      "sid": 169,
+      "location": 2,
+      "content": "映射关系呢",
+      "music": 0.0
+    },
+    {
+      "from": 412.779,
+      "to": 415.299,
+      "sid": 170,
+      "location": 2,
+      "content": "有的p m app这个工具就非常好用",
+      "music": 0.0
+    },
+    {
+      "from": 415.299,
+      "to": 416.279,
+      "sid": 171,
+      "location": 2,
+      "content": "比如说p m map",
+      "music": 0.0
+    },
+    {
+      "from": 416.279,
+      "to": 420.42,
+      "sid": 172,
+      "location": 2,
+      "content": "杠X就可以列出当前进程的所有的内存段",
+      "music": 0.0
+    },
+    {
+      "from": 420.42,
+      "to": 422.77,
+      "sid": 173,
+      "location": 2,
+      "content": "以及他们的权限和映射情况",
+      "music": 0.0
+    },
+    {
+      "from": 422.77,
+      "to": 425.71,
+      "sid": 174,
+      "location": 2,
+      "content": "然后如果是要看内核的页表布局的话",
+      "music": 0.0
+    },
+    {
+      "from": 425.71,
+      "to": 429.39,
+      "sid": 175,
+      "location": 2,
+      "content": "需要用root权限去读proe key page flags",
+      "music": 0.0
+    },
+    {
+      "from": 429.39,
+      "to": 432.919,
+      "sid": 176,
+      "location": 2,
+      "content": "那如果我想要去看一个进程的pig map",
+      "music": 0.0
+    },
+    {
+      "from": 432.919,
+      "to": 434.27,
+      "sid": 177,
+      "location": 2,
+      "content": "具体应该怎么操作",
+      "music": 0.0
+    },
+    {
+      "from": 434.27,
+      "to": 437.13,
+      "sid": 178,
+      "location": 2,
+      "content": "然后它的输出每一列都代表什么含义",
+      "music": 0.0
+    },
+    {
+      "from": 437.13,
+      "to": 439.63,
+      "sid": 179,
+      "location": 2,
+      "content": "next会把每个进程的页表映射",
+      "music": 0.0
+    },
+    {
+      "from": 439.63,
+      "to": 442.65,
+      "sid": 180,
+      "location": 2,
+      "content": "都放在prop code的pad pagns里面",
+      "music": 0.0
+    },
+    {
+      "from": 442.65,
+      "to": 446.65,
+      "sid": 181,
+      "location": 2,
+      "content": "那你只要有入图权限就可以seudo cut propagate",
+      "music": 0.0
+    },
+    {
+      "from": 446.65,
+      "to": 448.21,
+      "sid": 182,
+      "location": 2,
+      "content": "pg maps这样去读",
+      "music": 0.0
+    },
+    {
+      "from": 448.21,
+      "to": 450.43,
+      "sid": 183,
+      "location": 2,
+      "content": "但是它的格式是比较晦涩的",
+      "music": 0.0
+    },
+    {
+      "from": 450.43,
+      "to": 452.27,
+      "sid": 184,
+      "location": 2,
+      "content": "每一行是八个字节",
+      "music": 0.0
+    },
+    {
+      "from": 452.27,
+      "to": 454.37,
+      "sid": 185,
+      "location": 2,
+      "content": "然后每一位都有特殊的含义",
+      "music": 0.0
+    },
+    {
+      "from": 454.37,
+      "to": 457.22,
+      "sid": 186,
+      "location": 2,
+      "content": "看来直接读page maps还是有点难度啊",
+      "music": 0.0
+    },
+    {
+      "from": 457.22,
+      "to": 458.46,
+      "sid": 187,
+      "location": 2,
+      "content": "有没有更方便的办法",
+      "music": 0.0
+    },
+    {
+      "from": 458.46,
+      "to": 461.7,
+      "sid": 188,
+      "location": 2,
+      "content": "会使用PMF杠xx pd这个命令",
+      "music": 0.0
+    },
+    {
+      "from": 461.7,
+      "to": 464.22,
+      "sid": 189,
+      "location": 2,
+      "content": "他会把pig maps里面的内容解析成人",
+      "music": 0.0
+    },
+    {
+      "from": 464.22,
+      "to": 465.4,
+      "sid": 190,
+      "location": 2,
+      "content": "比较好读的格式",
+      "music": 0.0
+    },
+    {
+      "from": 465.4,
+      "to": 468.06,
+      "sid": 191,
+      "location": 2,
+      "content": "比如说他会告诉你这个页框号是多少",
+      "music": 0.0
+    },
+    {
+      "from": 468.06,
+      "to": 469.12,
+      "sid": 192,
+      "location": 2,
+      "content": "是不是脏的",
+      "music": 0.0
+    },
+    {
+      "from": 469.12,
+      "to": 471.2,
+      "sid": 193,
+      "location": 2,
+      "content": "是文件映射还是匿名映射",
+      "music": 0.0
+    },
+    {
+      "from": 471.2,
+      "to": 472.64,
+      "sid": 194,
+      "location": 2,
+      "content": "有没有被换出等等",
+      "music": 0.0
+    },
+    {
+      "from": 472.64,
+      "to": 474.56,
+      "sid": 195,
+      "location": 2,
+      "content": "而且普通用户是可以用这个工具",
+      "music": 0.0
+    },
+    {
+      "from": 474.56,
+      "to": 475.82,
+      "sid": 196,
+      "location": 2,
+      "content": "看自己的进程的",
+      "music": 0.0
+    },
+    {
+      "from": 475.82,
+      "to": 477.16,
+      "sid": 197,
+      "location": 2,
+      "content": "不需要root权限",
+      "music": 0.0
+    },
+    {
+      "from": 477.16,
+      "to": 477.66,
+      "sid": 198,
+      "location": 2,
+      "content": "好的",
+      "music": 0.0
+    },
+    {
+      "from": 477.66,
+      "to": 480.0,
+      "sid": 199,
+      "location": 2,
+      "content": "我们来进入今天的互动讨论环节",
+      "music": 0.0
+    },
+    {
+      "from": 480.0,
+      "to": 482.509,
+      "sid": 200,
+      "location": 2,
+      "content": "那第一个问题就是写实复制",
+      "music": 0.0
+    },
+    {
+      "from": 482.509,
+      "to": 485.749,
+      "sid": 201,
+      "location": 2,
+      "content": "这个机制到底是怎么依赖于页表项来工作的",
+      "music": 0.0
+    },
+    {
+      "from": 485.749,
+      "to": 488.09,
+      "sid": 202,
+      "location": 2,
+      "content": "写实复制其实就是父子进程",
+      "music": 0.0
+    },
+    {
+      "from": 488.09,
+      "to": 490.97,
+      "sid": 203,
+      "location": 2,
+      "content": "刚开始的时候会共享同一个物理页",
+      "music": 0.0
+    },
+    {
+      "from": 490.97,
+      "to": 494.299,
+      "sid": 204,
+      "location": 2,
+      "content": "然后把这些页的页表项都标记成只读",
+      "music": 0.0
+    },
+    {
+      "from": 494.299,
+      "to": 496.73,
+      "sid": 205,
+      "location": 2,
+      "content": "那只要没有人去写这个页的话",
+      "music": 0.0
+    },
+    {
+      "from": 496.73,
+      "to": 498.27,
+      "sid": 206,
+      "location": 2,
+      "content": "就一直都是共享的",
+      "music": 0.0
+    },
+    {
+      "from": 498.27,
+      "to": 501.61,
+      "sid": 207,
+      "location": 2,
+      "content": "那当其中一个进程尝试去写的时候",
+      "music": 0.0
+    },
+    {
+      "from": 501.61,
+      "to": 506.02,
+      "sid": 208,
+      "location": 2,
+      "content": "CPU就会因为这个只读标记触发一个页错误",
+      "music": 0.0
+    },
+    {
+      "from": 506.02,
+      "to": 508.06,
+      "sid": 209,
+      "location": 2,
+      "content": "所以说这个缺页异常",
+      "music": 0.0
+    },
+    {
+      "from": 508.06,
+      "to": 511.38,
+      "sid": 210,
+      "location": 2,
+      "content": "其实是写实复制能够实现的一个关键",
+      "music": 0.0
+    },
+    {
+      "from": 511.38,
+      "to": 512.22,
+      "sid": 211,
+      "location": 2,
+      "content": "没错没错",
+      "music": 0.0
+    },
+    {
+      "from": 512.22,
+      "to": 514.69,
+      "sid": 212,
+      "location": 2,
+      "content": "内核在收到这个缺页异常之后",
+      "music": 0.0
+    },
+    {
+      "from": 514.69,
+      "to": 517.65,
+      "sid": 213,
+      "location": 2,
+      "content": "会先检查这个页是不是共享的",
+      "music": 0.0
+    },
+    {
+      "from": 517.65,
+      "to": 519.11,
+      "sid": 214,
+      "location": 2,
+      "content": "而且是只读的",
+      "music": 0.0
+    },
+    {
+      "from": 519.11,
+      "to": 519.83,
+      "sid": 215,
+      "location": 2,
+      "content": "对的话",
+      "music": 0.0
+    },
+    {
+      "from": 519.83,
+      "to": 521.95,
+      "sid": 216,
+      "location": 2,
+      "content": "就会把这个页复制一份",
+      "music": 0.0
+    },
+    {
+      "from": 521.95,
+      "to": 525.48,
+      "sid": 217,
+      "location": 2,
+      "content": "然后把复制出来的这一份标记成可写",
+      "music": 0.0
+    },
+    {
+      "from": 525.48,
+      "to": 529.14,
+      "sid": 218,
+      "location": 2,
+      "content": "再把这个新的页表项指向这个复制出来的页",
+      "music": 0.0
+    },
+    {
+      "from": 529.14,
+      "to": 531.63,
+      "sid": 219,
+      "location": 2,
+      "content": "最后才会让进程继续去写",
+      "music": 0.0
+    },
+    {
+      "from": 531.63,
+      "to": 533.29,
+      "sid": 220,
+      "location": 2,
+      "content": "所以这样的话就做到了",
+      "music": 0.0
+    },
+    {
+      "from": 533.29,
+      "to": 535.87,
+      "sid": 221,
+      "location": 2,
+      "content": "只在需要写的时候才去复制",
+      "music": 0.0
+    },
+    {
+      "from": 535.87,
+      "to": 536.95,
+      "sid": 222,
+      "location": 2,
+      "content": "我还有个问题啊",
+      "music": 0.0
+    },
+    {
+      "from": 536.95,
+      "to": 539.25,
+      "sid": 223,
+      "location": 2,
+      "content": "多级页表虽然节省了内存",
+      "music": 0.0
+    },
+    {
+      "from": 539.25,
+      "to": 541.66,
+      "sid": 224,
+      "location": 2,
+      "content": "但增加了地址转换的层级",
+      "music": 0.0
+    },
+    {
+      "from": 541.66,
+      "to": 544.98,
+      "sid": 225,
+      "location": 2,
+      "content": "那现代CPU是如何通过TOB来优化地址",
+      "music": 0.0
+    },
+    {
+      "from": 544.98,
+      "to": 545.95,
+      "sid": 226,
+      "location": 2,
+      "content": "转换性能的",
+      "music": 0.0
+    },
+    {
+      "from": 545.95,
+      "to": 549.03,
+      "sid": 227,
+      "location": 2,
+      "content": "t l b miss和缺页异常有什么本质区别",
+      "music": 0.0
+    },
+    {
+      "from": 549.03,
+      "to": 549.25,
+      "sid": 228,
+      "location": 2,
+      "content": "令",
+      "music": 0.0
+    },
+    {
+      "from": 549.25,
+      "to": 552.24,
+      "sid": 229,
+      "location": 2,
+      "content": "其实就是把虚拟地址到物理地址的映射",
+      "music": 0.0
+    },
+    {
+      "from": 552.24,
+      "to": 553.36,
+      "sid": 230,
+      "location": 2,
+      "content": "缓存起来",
+      "music": 0.0
+    },
+    {
+      "from": 553.36,
+      "to": 556.68,
+      "sid": 231,
+      "location": 2,
+      "content": "所以当CPU要转换一个虚拟地址的时候",
+      "music": 0.0
+    },
+    {
+      "from": 556.68,
+      "to": 559.72,
+      "sid": 232,
+      "location": 2,
+      "content": "会先去查TRB如果命中了的话",
+      "music": 0.0
+    },
+    {
+      "from": 559.72,
+      "to": 561.54,
+      "sid": 233,
+      "location": 2,
+      "content": "就直接可以拿到物理地址了",
+      "music": 0.0
+    },
+    {
+      "from": 561.54,
+      "to": 564.07,
+      "sid": 234,
+      "location": 2,
+      "content": "根本不用去访问页表对",
+      "music": 0.0
+    },
+    {
+      "from": 564.07,
+      "to": 565.23,
+      "sid": 235,
+      "location": 2,
+      "content": "所以就会快很多",
+      "music": 0.0
+    },
+    {
+      "from": 565.23,
+      "to": 567.17,
+      "sid": 236,
+      "location": 2,
+      "content": "M听起来确实挺高效的",
+      "music": 0.0
+    },
+    {
+      "from": 567.17,
+      "to": 568.95,
+      "sid": 237,
+      "location": 2,
+      "content": "那如果t lb没有命中呢",
+      "music": 0.0
+    },
+    {
+      "from": 568.95,
+      "to": 570.13,
+      "sid": 238,
+      "location": 2,
+      "content": "如果t l b miss了",
+      "music": 0.0
+    },
+    {
+      "from": 570.13,
+      "to": 573.64,
+      "sid": 239,
+      "location": 2,
+      "content": "那就还是要去访问页表来把这个映射找出来",
+      "music": 0.0
+    },
+    {
+      "from": 573.64,
+      "to": 575.3,
+      "sid": 240,
+      "location": 2,
+      "content": "然后把它放到t lb里面",
+      "music": 0.0
+    },
+    {
+      "from": 575.3,
+      "to": 576.89,
+      "sid": 241,
+      "location": 2,
+      "content": "以备下次使用",
+      "music": 0.0
+    },
+    {
+      "from": 576.89,
+      "to": 579.53,
+      "sid": 242,
+      "location": 2,
+      "content": "这个过程是比t l b hit要慢的",
+      "music": 0.0
+    },
+    {
+      "from": 579.53,
+      "to": 582.57,
+      "sid": 243,
+      "location": 2,
+      "content": "但是它和缺页异常完全不是一个级别",
+      "music": 0.0
+    },
+    {
+      "from": 582.57,
+      "to": 586.4,
+      "sid": 244,
+      "location": 2,
+      "content": "缺页异常是因为这个页根本就不在内存里面",
+      "music": 0.0
+    },
+    {
+      "from": 586.4,
+      "to": 588.74,
+      "sid": 245,
+      "location": 2,
+      "content": "所以还要从磁盘把数据读进来",
+      "music": 0.0
+    },
+    {
+      "from": 588.74,
+      "to": 590.28,
+      "sid": 246,
+      "location": 2,
+      "content": "那这个就会慢很多",
+      "music": 0.0
+    },
+    {
+      "from": 590.28,
+      "to": 593.16,
+      "sid": 247,
+      "location": 2,
+      "content": "我们今天把虚拟内存地址转换页",
+      "music": 0.0
+    },
+    {
+      "from": 593.16,
+      "to": 597.099,
+      "sid": 248,
+      "location": 2,
+      "content": "表项的结构以及缺页异常的处理全都串了一遍",
+      "music": 0.0
+    },
+    {
+      "from": 597.099,
+      "to": 598.599,
+      "sid": 249,
+      "location": 2,
+      "content": "然后也聊了聊",
+      "music": 0.0
+    },
+    {
+      "from": 598.599,
+      "to": 601.98,
+      "sid": 250,
+      "location": 2,
+      "content": "怎么在LINUX里面去实际的观察这些东西好了",
+      "music": 0.0
+    },
+    {
+      "from": 601.98,
+      "to": 604.4,
+      "sid": 251,
+      "location": 2,
+      "content": "那这就是本期播客的全部内容啦",
+      "music": 0.0
+    },
+    {
+      "from": 604.4,
+      "to": 605.68,
+      "sid": 252,
+      "location": 2,
+      "content": "感谢大家的收听",
+      "music": 0.0
+    },
+    {
+      "from": 605.68,
+      "to": 607.06,
+      "sid": 253,
+      "location": 2,
+      "content": "我们下次再见",
+      "music": 0.0
+    },
+    {
+      "from": 607.06,
+      "to": 608.16,
+      "sid": 254,
+      "location": 2,
+      "content": "拜拜拜拜",
+      "music": 0.0
+    }
+  ]
+}
